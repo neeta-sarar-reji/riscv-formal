@@ -1,0 +1,61 @@
+nohup: ignoring input
+SBY 10:42:28 [checks/reg_d30] Removing directory '/work/riscv-formal/cores/picorv32/checks/reg_d30'.
+SBY 10:42:28 [checks/reg_d30] Writing 'checks/reg_d30/src/defines.sv'.
+SBY 10:42:28 [checks/reg_d30] Writing 'checks/reg_d30/src/reg_ch0.sv'.
+SBY 10:42:28 [checks/reg_d30] Copy '/work/riscv-formal/checks/rvfi_macros.vh' to '/work/riscv-formal/cores/picorv32/checks/reg_d30/src/rvfi_macros.vh'.
+SBY 10:42:28 [checks/reg_d30] Copy '/work/riscv-formal/checks/rvfi_channel.sv' to '/work/riscv-formal/cores/picorv32/checks/reg_d30/src/rvfi_channel.sv'.
+SBY 10:42:28 [checks/reg_d30] Copy '/work/riscv-formal/checks/rvfi_testbench.sv' to '/work/riscv-formal/cores/picorv32/checks/reg_d30/src/rvfi_testbench.sv'.
+SBY 10:42:28 [checks/reg_d30] Copy '/work/riscv-formal/checks/rvfi_reg_check.sv' to '/work/riscv-formal/cores/picorv32/checks/reg_d30/src/rvfi_reg_check.sv'.
+SBY 10:42:28 [checks/reg_d30] engine_0: smtbmc boolector
+SBY 10:42:28 [checks/reg_d30] base: starting process "cd checks/reg_d30/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 10:42:28 [checks/reg_d30] base: finished (returncode=0)
+SBY 10:42:28 [checks/reg_d30] prep: starting process "cd checks/reg_d30/model; yosys -ql design_prep.log design_prep.ys"
+SBY 10:42:28 [checks/reg_d30] prep: finished (returncode=0)
+SBY 10:42:28 [checks/reg_d30] smt2: starting process "cd checks/reg_d30/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 10:42:29 [checks/reg_d30] smt2: finished (returncode=0)
+SBY 10:42:29 [checks/reg_d30] engine_0: starting process "cd checks/reg_d30; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 30:31  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Solver: boolector
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 0..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 1..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 2..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 3..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 4..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 5..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 6..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 7..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 8..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 9..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 10..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 11..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 12..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 13..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 14..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 15..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 16..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 17..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 18..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 19..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 20..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 21..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 22..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 23..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 24..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 25..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 26..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 27..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 28..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Skipping step 29..
+SBY 10:42:29 [checks/reg_d30] engine_0: ##   0:00:00  Checking assumptions in step 30..
+SBY 10:42:32 [checks/reg_d30] engine_0: ##   0:00:03  Checking assertions in step 30..
+SBY 10:43:32 [checks/reg_d30] engine_0: ##   0:01:03  waiting for solver (1 minute)
+SBY 10:47:32 [checks/reg_d30] engine_0: ##   0:05:03  waiting for solver (5 minutes)
+SBY 10:52:32 [checks/reg_d30] engine_0: ##   0:10:03  waiting for solver (10 minutes)
+SBY 10:57:32 [checks/reg_d30] engine_0: ##   0:15:03  waiting for solver (15 minutes)
+SBY 11:12:25 [checks/reg_d30] engine_0: ##   0:29:56  Status: passed
+SBY 11:12:25 [checks/reg_d30] engine_0: finished (returncode=0)
+SBY 11:12:25 [checks/reg_d30] engine_0: Status returned by engine: pass
+SBY 11:12:25 [checks/reg_d30] summary: Elapsed clock time [H:MM:SS (secs)]: 0:29:57 (1797)
+SBY 11:12:25 [checks/reg_d30] summary: Elapsed process time [H:MM:SS (secs)]: 0:29:56 (1796)
+SBY 11:12:25 [checks/reg_d30] summary: engine_0 (smtbmc boolector) returned pass
+SBY 11:12:25 [checks/reg_d30] summary: engine_0 did not produce any traces
+SBY 11:12:25 [checks/reg_d30] DONE (PASS, rc=0)

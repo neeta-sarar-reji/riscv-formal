@@ -5,7 +5,8 @@ module rvfi_wrapper (
 );
 	(* keep *) wire trap;
 
-	(* keep *) `rvformal_rand_reg mem_ready;
+	(* keep *) `rvformal_rand_reg mem_ready_rand;
+	(* keep *) wire mem_ready;
 	(* keep *) `rvformal_rand_reg [31:0] mem_rdata;
 
 	(* keep *) wire        mem_valid;
@@ -14,8 +15,14 @@ module rvfi_wrapper (
 	(* keep *) wire [31:0] mem_wdata;
 	(* keep *) wire [3:0]  mem_wstrb;
 
+	(* keep *) wire        pcpi_valid;
+	(* keep *) wire [31:0] pcpi_insn, pcpi_rs1, pcpi_rs2;
+	(* keep *) wire        pcpi_wr, pcpi_wait, pcpi_ready;
+	(* keep *) wire [31:0] pcpi_rd;
+
 	picorv32 #(
 		.COMPRESSED_ISA(1),
+		.ENABLE_PCPI(1),
 		.ENABLE_FAST_MUL(1),
 		.ENABLE_DIV(1),
 		.BARREL_SHIFTER(1)
@@ -32,15 +39,38 @@ module rvfi_wrapper (
 		.mem_wstrb (mem_wstrb),
 		.mem_rdata (mem_rdata),
 
+		.pcpi_valid(pcpi_valid),
+		.pcpi_insn (pcpi_insn ),
+		.pcpi_rs1  (pcpi_rs1  ),
+		.pcpi_rs2  (pcpi_rs2  ),
+		.pcpi_wr   (pcpi_wr   ),
+		.pcpi_rd   (pcpi_rd   ),
+		.pcpi_wait (pcpi_wait ),
+		.pcpi_ready(pcpi_ready),
+
 		`RVFI_CONN
+	);
+
+	pcpi_custom0 custom0_i (
+		.clk       (clock     ),
+		.resetn    (!reset    ),
+		.pcpi_valid(pcpi_valid),
+		.pcpi_insn (pcpi_insn ),
+		.pcpi_rs1  (pcpi_rs1  ),
+		.pcpi_rs2  (pcpi_rs2  ),
+		.pcpi_wr   (pcpi_wr   ),
+		.pcpi_rd   (pcpi_rd   ),
+		.pcpi_wait (pcpi_wait ),
+		.pcpi_ready(pcpi_ready)
 	);
 
 `ifdef PICORV32_FAIRNESS
 	reg [2:0] mem_wait = 0;
-	always @(posedge clock) begin
+	always @(posedge clock)
 		mem_wait <= {mem_wait, mem_valid && !mem_ready};
-		assume (~mem_wait || trap);
-	end
+	assign mem_ready = mem_ready_rand || (&mem_wait[1:0]);
+`else
+	assign mem_ready = mem_ready_rand;
 `endif
 
 `ifdef PICORV32_CSR_RESTRICT

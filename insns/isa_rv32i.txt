@@ -35,3 +35,4 @@ sub
 sw
 xor
 xori
+custom0

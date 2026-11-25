@@ -1,0 +1,88 @@
+SBY  4:38:08 [checks/insn_custom0_ch0] Removing directory '/work/riscv-formal/cores/picorv32/checks/insn_custom0_ch0'.
+SBY  4:38:08 [checks/insn_custom0_ch0] Writing 'checks/insn_custom0_ch0/src/defines.sv'.
+SBY  4:38:08 [checks/insn_custom0_ch0] Writing 'checks/insn_custom0_ch0/src/insn_custom0_ch0.sv'.
+SBY  4:38:08 [checks/insn_custom0_ch0] Copy '/work/riscv-formal/checks/rvfi_macros.vh' to '/work/riscv-formal/cores/picorv32/checks/insn_custom0_ch0/src/rvfi_macros.vh'.
+SBY  4:38:08 [checks/insn_custom0_ch0] Copy '/work/riscv-formal/checks/rvfi_channel.sv' to '/work/riscv-formal/cores/picorv32/checks/insn_custom0_ch0/src/rvfi_channel.sv'.
+SBY  4:38:08 [checks/insn_custom0_ch0] Copy '/work/riscv-formal/checks/rvfi_testbench.sv' to '/work/riscv-formal/cores/picorv32/checks/insn_custom0_ch0/src/rvfi_testbench.sv'.
+SBY  4:38:08 [checks/insn_custom0_ch0] Copy '/work/riscv-formal/checks/rvfi_insn_check.sv' to '/work/riscv-formal/cores/picorv32/checks/insn_custom0_ch0/src/rvfi_insn_check.sv'.
+SBY  4:38:08 [checks/insn_custom0_ch0] Copy '/work/riscv-formal/insns/insn_custom0.v' to '/work/riscv-formal/cores/picorv32/checks/insn_custom0_ch0/src/insn_custom0.v'.
+SBY  4:38:08 [checks/insn_custom0_ch0] engine_0: smtbmc boolector
+SBY  4:38:08 [checks/insn_custom0_ch0] base: starting process "cd checks/insn_custom0_ch0/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  4:38:08 [checks/insn_custom0_ch0] base: finished (returncode=0)
+SBY  4:38:08 [checks/insn_custom0_ch0] prep: starting process "cd checks/insn_custom0_ch0/model; yosys -ql design_prep.log design_prep.ys"
+SBY  4:38:08 [checks/insn_custom0_ch0] prep: finished (returncode=0)
+SBY  4:38:08 [checks/insn_custom0_ch0] smt2: starting process "cd checks/insn_custom0_ch0/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY  4:38:08 [checks/insn_custom0_ch0] smt2: finished (returncode=0)
+SBY  4:38:08 [checks/insn_custom0_ch0] engine_0: starting process "cd checks/insn_custom0_ch0; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 60:61  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY  4:38:08 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Solver: boolector
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 0..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 1..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 2..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 3..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 4..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 5..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 6..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 7..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 8..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 9..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 10..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 11..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 12..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 13..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 14..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 15..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 16..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 17..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 18..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 19..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 20..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 21..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 22..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 23..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 24..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 25..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 26..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 27..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 28..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 29..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 30..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 31..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 32..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 33..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 34..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 35..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 36..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 37..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 38..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:00  Skipping step 39..
+SBY  4:38:09 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 40..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 41..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 42..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 43..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 44..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 45..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 46..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 47..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 48..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 49..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 50..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 51..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 52..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 53..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 54..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 55..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 56..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 57..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 58..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Skipping step 59..
+SBY  4:38:10 [checks/insn_custom0_ch0] engine_0: ##   0:00:01  Checking assumptions in step 60..
+SBY  4:38:52 [checks/insn_custom0_ch0] engine_0: ##   0:00:43  Checking assertions in step 60..
+SBY  4:39:52 [checks/insn_custom0_ch0] engine_0: ##   0:01:43  waiting for solver (1 minute)
+SBY  4:42:18 [checks/insn_custom0_ch0] engine_0: ##   0:04:09  Status: passed
+SBY  4:42:18 [checks/insn_custom0_ch0] engine_0: finished (returncode=0)
+SBY  4:42:18 [checks/insn_custom0_ch0] engine_0: Status returned by engine: pass
+SBY  4:42:18 [checks/insn_custom0_ch0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:04:10 (250)
+SBY  4:42:18 [checks/insn_custom0_ch0] summary: Elapsed process time [H:MM:SS (secs)]: 0:04:10 (250)
+SBY  4:42:18 [checks/insn_custom0_ch0] summary: engine_0 (smtbmc boolector) returned pass
+SBY  4:42:18 [checks/insn_custom0_ch0] summary: engine_0 did not produce any traces
+SBY  4:42:18 [checks/insn_custom0_ch0] DONE (PASS, rc=0)

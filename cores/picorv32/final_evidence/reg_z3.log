@@ -1,0 +1,66 @@
+nohup: ignoring input
+SBY  9:38:45 [checks/reg_z3] Removing directory '/work/riscv-formal/cores/picorv32/checks/reg_z3'.
+SBY  9:38:45 [checks/reg_z3] Writing 'checks/reg_z3/src/defines.sv'.
+SBY  9:38:45 [checks/reg_z3] Writing 'checks/reg_z3/src/reg_ch0.sv'.
+SBY  9:38:45 [checks/reg_z3] Copy '/work/riscv-formal/checks/rvfi_macros.vh' to '/work/riscv-formal/cores/picorv32/checks/reg_z3/src/rvfi_macros.vh'.
+SBY  9:38:45 [checks/reg_z3] Copy '/work/riscv-formal/checks/rvfi_channel.sv' to '/work/riscv-formal/cores/picorv32/checks/reg_z3/src/rvfi_channel.sv'.
+SBY  9:38:45 [checks/reg_z3] Copy '/work/riscv-formal/checks/rvfi_testbench.sv' to '/work/riscv-formal/cores/picorv32/checks/reg_z3/src/rvfi_testbench.sv'.
+SBY  9:38:45 [checks/reg_z3] Copy '/work/riscv-formal/checks/rvfi_reg_check.sv' to '/work/riscv-formal/cores/picorv32/checks/reg_z3/src/rvfi_reg_check.sv'.
+SBY  9:38:45 [checks/reg_z3] engine_0: smtbmc z3
+SBY  9:38:45 [checks/reg_z3] base: starting process "cd checks/reg_z3/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  9:38:46 [checks/reg_z3] base: finished (returncode=0)
+SBY  9:38:46 [checks/reg_z3] prep: starting process "cd checks/reg_z3/model; yosys -ql design_prep.log design_prep.ys"
+SBY  9:38:46 [checks/reg_z3] prep: finished (returncode=0)
+SBY  9:38:46 [checks/reg_z3] smt2: starting process "cd checks/reg_z3/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY  9:38:46 [checks/reg_z3] smt2: finished (returncode=0)
+SBY  9:38:46 [checks/reg_z3] engine_0: starting process "cd checks/reg_z3; yosys-smtbmc -s z3 --presat --noprogress -t 40:41  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Solver: z3
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 0..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 1..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 2..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 3..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 4..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 5..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 6..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 7..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 8..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 9..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 10..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 11..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 12..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 13..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 14..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 15..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 16..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 17..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 18..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 19..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 20..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 21..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 22..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 23..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 24..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 25..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 26..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 27..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 28..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 29..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 30..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 31..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 32..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 33..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 34..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 35..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 36..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 37..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 38..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Skipping step 39..
+SBY  9:38:46 [checks/reg_z3] engine_0: ##   0:00:00  Checking assumptions in step 40..
+SBY  9:39:46 [checks/reg_z3] engine_0: ##   0:01:00  waiting for solver (1 minute)
+SBY  9:43:46 [checks/reg_z3] engine_0: ##   0:05:00  waiting for solver (5 minutes)
+SBY  9:48:46 [checks/reg_z3] engine_0: ##   0:10:00  waiting for solver (10 minutes)
+SBY  9:53:46 [checks/reg_z3] engine_0: ##   0:15:00  waiting for solver (15 minutes)
+SBY 10:08:46 [checks/reg_z3] engine_0: ##   0:30:00  waiting for solver (30 minutes)
+SBY 10:38:46 [checks/reg_z3] engine_0: ##   1:00:00  waiting for solver (1 hour)
+SBY ---- Keyboard interrupt or external termination signal ----
+SBY 11:16:05 [checks/reg_z3] engine_0: terminating process
